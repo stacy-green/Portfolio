@@ -80,6 +80,19 @@
         img {
             max-width: 100%;
         }
+        .treescapade {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .treescapade-text {
+            width: 50%;
+            line-height: 2;
+        }
+        .treescapade-screenshot {
+            width: 80%;
+            margin: 2rem 2rem;
+        }
         .section-break {
             border: 5px solid rgb(20, 181, 20);
             border-radius: 1rem;
@@ -144,6 +157,14 @@
             margin: 2rem 2rem;
             line-height: 2;
         }
+        .vertical-line {
+            border-left: 6px solid rgb(28, 225, 222);
+            height: 400px;
+        }
+        .horizontal-line {
+            border: 2px solid rgb(28, 225, 222);
+            width: 800px;
+        }
     </style>
 </head>
 <body>
@@ -161,6 +182,7 @@
             <div class="img-div">
                 <img src="media\profile_pic.jpg" alt="">
             </div>
+            <div class="vertical-line"></div>
             <div class="about-div">
                 My name is Stacy. I'm a junior developer, chainmailler, Dungeon Master, and all-around problem solver. Here are some of my projects.
             </div>
@@ -172,7 +194,8 @@
         <h1>Sample Websites</h1>
         <div class="sample-websites-div">
             <div class="treescapade">
-
+                <div class="treescapade-text">This is a sample website for a hypothetical ziplining company. It has a simple layout, including links to socials. The images below rotate on a carousel, showing different pictures of the hypothetical zipline course.</div>
+                <img class="treescapade-screenshot" src="Projects\FreelanceProjects\Website Demos\Treescapade\Treescapade.png" alt="">
             </div>
         </div>
         <!-- end sample websites -->
@@ -181,52 +204,62 @@
         <!-- start small projects -->
         <hr class="section-break">
         <h1>Small Projects</h1>
+        <div class="horizontal-line"></div>
         <div class="small-project-div">
             <div class="text-div">
                 <p class="title">Statistical Analysis</p>
                 <p>Python</p>
                 <p>A simple statistical analysis tool for calculating basic statistics such as mean, standard deviation, and t-score.</p>
             </div>
+            <div class="vertical-line"></div>
             <div class="img-div">
                 <img src="media\StatisticalAnalysis\Statistical Analysis.png" alt="">
             </div>
         </div>
+        <div class="horizontal-line"></div>
         <div class="small-project-div">
             <div class="img-div">
                 <img src="media\Snowman\snowman.png" alt="">
             </div>
+            <div class="vertical-line"></div>
             <div class="text-div">
                 <p class="title">Snowman</p>
                 <p>JavaScript, HTML, CSS</p>
                 <p>A reskinned hangman game that pulls random obscure words from an API.</p>
             </div>
         </div>
+        <div class="horizontal-line"></div>
         <div class="small-project-div">
             <div class="text-div">
                 <p class="title">Mapr App</p>
                 <p>Vuejs, Python, Django, HTML, CSS</p>
                 <p>Moblab (10 participants). Mapr App allows users to register for groups and then see the location of other members in the same group. Group members are paginated if membership is large enough.</p>
             </div>
+            <div class="vertical-line"></div>
             <div class="img-div">
                 <img src="media\Mapr\mapr.png" alt="">
             </div>
         </div>
+        <div class="horizontal-line"></div>
         <div class="small-project-div">
             <div class="img-div">
                 <img src="media\RockPaperScissors\RockPaperScissors.png" alt="">
             </div>
+            <div class="vertical-line"></div>
             <div class="text-div">
                 <p class="title">Rock Paper Scissors</p>
                 <p>JavaScript, HTML, CSS</p>
                 <p>Click an icon and the computer randomly selects! Winner is displayed below.</p>
             </div>
         </div>
+        <div class="horizontal-line"></div>
         <div class="small-project-div">
             <div class="text-div">
                 <p class="title">Unit Converter</p>
                 <p>JavaScript, HTML</p>
                 <p>A simple program that converts from one unit of measurement to another.</p>
             </div>
+            <div class="vertical-line"></div>
             <div class="img-div">
                 <img src="media\UnitConverter\Unit Converter.png" alt="">
             </div>
