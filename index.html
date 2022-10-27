@@ -6,15 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        html {
+            max-width: 100%;
+        }
         body {
             background-color: black;
             color: white;
             text-align: center;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         .main-div {
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-sizing:border-box;
+        }
+        .about-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 3;
+            font-size: 20px;
+            height: 400px;
+            width: 400px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            box-sizing:border-box;
         }
         .small-project-div {
             display: flex;
@@ -22,7 +42,7 @@
             justify-content: space-evenly;
             align-items: center;
             width: 100%;
-
+            box-sizing:border-box;
         }
         .img-div {
             display: flex;
@@ -37,6 +57,7 @@
             border-radius: 2rem;
             overflow: hidden;
             border-color: black;
+            box-sizing:border-box;
         }
         .text-div {
             display: flex;
@@ -44,35 +65,64 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            line-height: 3;
+            line-height: 1;
             font-size: 20px;
             height: 400px;
             width: 400px;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            box-sizing:border-box;
         }
         .title {
             font-size: 30px;
+            margin: 0 0;
         }
         img {
             max-width: 100%;
+        }
+        .section-break {
+            border: 10px solid green;
+            width: 100%;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
     <div class="main-div">
+
+        <!-- start header -->
         <div class="header">
 
         </div>
-        <div class="first small-project-div">
+        <!-- end header -->
+
+        <!-- start about me -->
+        <h1>About Me</h1>
+        <div class="small-project-div">
             <div class="img-div">
                 <img src="media\profile_pic.jpg" alt="">
             </div>
-            <div class="text-div">
+            <div class="about-div">
                 My name is Stacy. I'm a junior developer, chainmailler, Dungeon Master, and all-around problem solver. Here are some of my projects.
             </div>
         </div>
-        <div class="fourth small-project-div">
+        <!-- end about me -->
+
+        <!-- start sample websites  -->
+        <hr class="section-break">
+        <h1>Sample Websites</h1>
+        <div class="sample-websites-div">
+            <div class="treescapade">
+
+            </div>
+        </div>
+        <!-- end sample websites -->
+
+        
+        <!-- start small projects -->
+        <hr class="section-break">
+        <h1>Small Projects</h1>
+        <div class="small-project-div">
             <div class="text-div">
                 <p class="title">Statistical Analysis</p>
                 <p>Python</p>
@@ -82,7 +132,7 @@
                 <img src="media\StatisticalAnalysis\Statistical Analysis.png" alt="">
             </div>
         </div>
-        <div class="fifth small-project-div">
+        <div class="small-project-div">
             <div class="img-div">
                 <img src="media\Snowman\snowman.png" alt="">
             </div>
@@ -92,7 +142,7 @@
                 <p>A reskinned hangman game that pulls random obscure words from an API.</p>
             </div>
         </div>
-        <div class="sixth small-project-div">
+        <div class="small-project-div">
             <div class="text-div">
                 <p class="title">Mapr App</p>
                 <p>Vuejs, Python, Django, HTML, CSS</p>
@@ -102,39 +152,17 @@
                 <img src="media\Mapr\mapr.png" alt="">
             </div>
         </div>
-        <div class="seventh small-project-div">
+        <div class="small-project-div">
             <div class="img-div">
                 image
             </div>
             <div class="text-div">
-                text
+                <p class="title">Weather</p>
+                <p></p>
+                <p></p>
             </div>
         </div>
-        <div class="eighth small-project-div">
-            <div class="text-div">
-                text
-            </div>
-            <div class="img-div">
-                image
-            </div>
-        </div>
-        <div class="ninth small-project-div">
-            <div class="img-div">
-                image
-            </div>
-            <div class="text-div">
-                text
-            </div>
-        </div>
-        <div class="tenth small-project-div">
-            <div class="text-div">
-                text
-            </div>
-            <div class="img-div">
-                image
-            </div>
-        </div>
-        <div class="second small-project-div">
+        <div class="small-project-div">
             <div class="text-div">
                 <p class="title">Unit Converter</p>
                 <p>JavaScript, HTML</p>
@@ -144,15 +172,26 @@
                 <img src="media\UnitConverter\Unit Converter.png" alt="">
             </div>
         </div>
-        <div class="third small-project-div">
-            <div class="img-div rockpaperscissors">
-                <img src="media\RockPaperScissors\RockPaperScissors.png" class="rps" alt="">
+        <div class="small-project-div">
+            <div class="img-div">
+                <img src="media\RockPaperScissors\RockPaperScissors.png" alt="">
             </div>
             <div class="text-div">
                 <p class="title">Rock Paper Scissors</p>
                 <p>JavaScript, HTML, CSS</p>
                 <p>Click an icon and the computer randomly selects! Winner is displayed below.</p>
             </div>
+        </div>
+        <!-- end small projects -->
+
+        <!-- start large projects -->
+        <hr class="section-break">
+        <h1>Large Projects</h1>
+        <div class="large-project-div">
+            <p>Pokedex</p>
+        </div>
+        <div class="large-project-div">
+            <p>One-Stop One-Shot</p>
         </div>
     </div>
 </body>
