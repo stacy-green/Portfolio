@@ -81,9 +81,68 @@
             max-width: 100%;
         }
         .section-break {
-            border: 10px solid green;
-            width: 80%;
+            border: 5px solid rgb(20, 181, 20);
+            border-radius: 1rem;
+            width: 90%;
             box-sizing: border-box;
+        }
+        .pokedex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pokeabout, .pokescreens {
+            display: flex;
+        }
+        .pokeimg {
+            max-height: 400px;
+            max-width: 400px;
+        }
+        .pokeabout-subdiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            text-align: center;
+            line-height: 3;
+            margin: 2rem 2rem;
+        }
+        .pokeabout-text {
+            width: 50%;
+
+        }
+        .large-project-seperator {
+            border: 5px solid rgb(34, 19, 204);
+            border-radius: 1rem;
+            width: 75%;
+            box-sizing: border-box;
+        }
+        .OSOS-description {
+            width: 50%;
+            text-align: center;
+            line-height: 2;
+        }
+        .OSOS-description-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .OSOS-screenshot-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .OSOS-screenshot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 2rem;
+        }
+        .encounter-text, .map-text, .villain-text, .portfolio-text {
+            width: 50%;
+            margin: 2rem 2rem;
+            line-height: 2;
         }
     </style>
 </head>
@@ -177,11 +236,76 @@
         <!-- start large projects -->
         <hr class="section-break">
         <h1>Large Projects</h1>
+        <hr class="large-project-seperator">
         <div class="large-project-div">
-            <p>Pokedex</p>
+            <h1>Pokedex</h1>
+            <div class="pokedex">
+                <div class="pokeabout">
+                    <div class="pokeabout-subdiv">
+                        <p class="pokeabout-text">The Pokedex pulls from the PokeAPI to fill a database with information, including name, number, height, weight, types, etc. It paginates the pokemon in sets of 20, and also contains a search function.</p>
+                    </div>
+                    <div class="pokeabout-subdiv">
+                        <img class="pokeimg" src="media\Pokedex\pokecode.png" alt="">
+                    </div>
+                </div>
+                <div class="pokescreens">
+                    <div class="pokeabout-subdiv">
+                        <img class="pokeimg" src="media\Pokedex\pokepage.png" alt="">
+                    </div>
+                    <div class="pokeabout-subdiv">
+                        <img class="pokeimg" src="media\Pokedex\pokesearch.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
+        <hr class="large-project-seperator">
         <div class="large-project-div">
-            <p>One-Stop One-Shot</p>
+            <h1>One-Stop One-Shot</h1>
+            <div class="OSOS-proj">
+                <div class="OSOS-description-div">
+                    <p class="OSOS-description">OSOS is my capstone project for my Python-Based Fullstack Developer Bootcamp. The project contains 4 separate apps: OSOS, Encounter Builder, Map Generator, and Villain/Antagonist generator.</p>
+                
+                    <p class="OSOS-description">OSOS builds a portfolio for a single session of Dungeons and Dragons 5th Edition. It allows Dungeon Masters to quickly build a standalone scenario when scheduling conflicts prevent a player from attending, but everyone else already showed up.</p>
+                </div>
+                <div class="OSOS-screenshot-div">
+                    <div class="OSOS-screenshot">
+                        <h3>Encounter Builder</h3>
+                        <div class="encounter-text">
+                            The Encounter Builder app leans heavily on Vuejs. Character levels are stored locally, and experience goals are calculated as party levels change. Users choose monsters for encounters by first selecting the Challenge Rating from the dropdown menu, then selecting a monster from a list that is populated on CR selection. Finally, the selected monster's statblock is populated on the right, using Vuejs to fill in each item of information in an HTML template. Users can scroll up or down on the statblock depending on how much information is present.
+                        </div>
+                        <div>
+                            <img src="media\OSOS\BuildEncounter.png" alt="">
+                        </div>
+                    </div>
+                    <div class="OSOS-screenshot">
+                        <h3>Map Generator</h3>
+                        <div class="map-text">
+                            Map Generator is a bit of a misnomer. It actually randomly slects a map after selecting a size; each map size has 15 maps to draw from the database. Users can add as many maps as they want, for a longer or shorter play session.
+                        </div>
+                        <div>
+                            <img src="media\OSOS\GetMap.png" alt="">
+                        </div>
+                    </div>
+                    <div class="OSOS-screenshot">
+                        <h3>Villain Generator</h3>
+                        <div class="villain-text">
+                            The Villain/Antagonist Generator is another app that leans heavily on Vuejs. The only required fields are first name, gender, and race. All official races and names are loaded into a json file. Users can enter their own data for their villain, or randomly select by clicking "roll." The villain generator includes fields such as organization, motivation, and secret, so that Dungeon Masters can create and customize robust villains almosts instantly. 
+                        </div>
+                        <div>
+                            <img src="media\OSOS\CreateVillain.png" alt="">
+                        </div>
+                    </div>
+                    <div class="OSOS-screenshot">
+                        <h3>One-Shot Portfolio</h3>
+                        <div class="portfolio-text">
+                            The OSOS app, the project's namesake, is the portfolio itself. The portfolio is a summary of the session, giving the Dungeon Master a quick snapshot of the maps, antagonists, and combat encounters. However, clicking on practically any element takes the user to more detailed versions. The buttons are self-explanatory; users can click on each button and find themselves on the respective app. 
+                        </div>
+                        <div>
+                            <img src="media\OSOS\FinishedPortfolio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
